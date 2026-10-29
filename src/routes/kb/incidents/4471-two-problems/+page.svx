@@ -2,8 +2,8 @@
 layout: runbook
 title: '#4471 · two problems under one ticket'
 owner: Steve Cook
-status: draft
-reviewed: 2026-10-29
+status: closed
+reviewed: 2026-10-05
 signature: Steve Cook
 ---
 
