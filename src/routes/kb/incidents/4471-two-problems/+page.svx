@@ -4,7 +4,7 @@ title: '#4471 · two problems under one ticket'
 owner: Steve Cook
 status: closed
 reviewed: 2026-10-05
-signature: Steve Cook
+signature: v1.eyJzdWIiOiIxODg1IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyODc0NjEsImV4cCI6MTc5MzM3Mzg2MX0._JgsEWglBV94XlPj3emB9XjssYWBV8DPtKDczEybR0g
 ---
 
 <script>
@@ -52,4 +52,4 @@ to that ticket’s owner cause. Split it out so engineering does not close the w
 A merged count is not a single cause. Compute the groups from tenant + channel before you
 call the ticket known. Close each ticket the way engineering closed the work.
 
-<RenderStamp signature="Steve Cook" />
+<RenderStamp signature="v1.eyJzdWIiOiIxODg1IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyODc0NjEsImV4cCI6MTc5MzM3Mzg2MX0._JgsEWglBV94XlPj3emB9XjssYWBV8DPtKDczEybR0g" />
