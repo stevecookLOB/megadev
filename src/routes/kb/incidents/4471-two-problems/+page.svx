@@ -1,0 +1,50 @@
+---
+layout: runbook
+title: '#4471 · two problems under one ticket'
+owner: Steve Cook
+status: draft
+reviewed: 2026-10-29
+signature: Steve Cook
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+Ticket **#4471** was filed as one known bug: the shared parser reads dates month-first while
+day-first tenants write the day first. That story is true for most of the pile, but it is not
+the whole pile.
+
+The desk merged **412** unique reports into #4471. The cause logic in `#lib/kb/causes` splits
+them into **two** problems that need **two** tickets.
+
+## What #4471 actually holds
+
+<CauseTable ticket={4471} />
+
+## The two problems
+
+1. **`parser` — 379 reports.** The shared parser always reads month first. Day-first tenants
+   (every tenant on file) get flipped days on app, email, and booking-v2 form traffic.
+2. **`hint` — 33 reports.** booking-v3 prints `MM/DD/YYYY` under the date field. People type
+   what the hint says; the form still reads the value the tenant’s day-first way. Same symptom,
+   different mechanism — not fixed by the parser queue alone.
+
+<Callout>
+#4471’s page said “one issue, one fix queued.” The table above marks `hint` as not belonging
+to that ticket’s owner cause. Split it out so engineering does not close the wrong half.
+</Callout>
+
+## Tickets filed
+
+- Parser (379 reports): track in the public repo issue titled for `parser`.
+- Hint (33 reports): track in the public repo issue titled for `hint`.
+
+## Lesson
+
+A merged count is not a single cause. Compute the groups from tenant + channel before you
+call the ticket known.
+
+<RenderStamp signature="Steve Cook" />
