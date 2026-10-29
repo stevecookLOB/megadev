@@ -42,9 +42,14 @@ to that ticket’s owner cause. Split it out so engineering does not close the w
 - Parser (379 reports): https://github.com/stevecookLOB/megadev/issues/1
 - Hint (33 reports): https://github.com/stevecookLOB/megadev/issues/2
 
+## Engineering update · #4471 closed 05 Oct
+
+- **parser — fixed** · `fix(dates): parse dd/mm for eu locales` · ticket closed as completed
+- **hint — won't fix** · booking-v3 form retired · ticket closed as not planned
+
 ## Lesson
 
 A merged count is not a single cause. Compute the groups from tenant + channel before you
-call the ticket known.
+call the ticket known. Close each ticket the way engineering closed the work.
 
 <RenderStamp signature="Steve Cook" />
