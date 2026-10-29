@@ -39,8 +39,8 @@ to that ticket’s owner cause. Split it out so engineering does not close the w
 
 ## Tickets filed
 
-- Parser (379 reports): track in the public repo issue titled for `parser`.
-- Hint (33 reports): track in the public repo issue titled for `hint`.
+- Parser (379 reports): https://github.com/stevecookLOB/megadev/issues/1
+- Hint (33 reports): https://github.com/stevecookLOB/megadev/issues/2
 
 ## Lesson
 
